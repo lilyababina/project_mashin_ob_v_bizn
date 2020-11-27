@@ -26,14 +26,17 @@ API: flask
 ### Клонируем репозиторий и создаем образ
 ```
 
-$ git clone https://github.com/lilyababina/masinnoe_obu4_v_biznese/tree/main/project/GB_docker_flask.git
+$ git clone https://github.com/lilyababina/project_mashin_ob_v_bizn.git
+$ cd project_mashin_ob_v_bizn
 $ cd GB_docker_flask
-$ docker build -t 1/gb_docker_flask_ .
+$ docker build -t 1/gb_docker_flask .
 ```
 
 ### Запускаем контейнер
 ```
-$ docker run -d -p 8180:8180 -p 8181:8181 1/gb_docker_flask_
+$ docker run -d -p 8180:8180 -p 8181:8181 1/gb_docker_flask
 ```
 
 ### Переходим на localhost:8181
+При вводе данных для проверки работы модели первые 4 признака нужно выбрать из выпадающего списка
+В следующие три поля вводятся числа от 1 до 99
